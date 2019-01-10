@@ -16,7 +16,7 @@ class Tutorial extends Model
         return $this->hasOne('App\Valoracion');
     }    
 
-    public function fabricantes()
+    public function fabricante()
     {
         return $this->hasOne('App\Fabricante');
     }
