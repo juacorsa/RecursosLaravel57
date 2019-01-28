@@ -12,7 +12,7 @@ class IdiomasTableSeeder extends Seeder
      */
     public function run()
     {
-    	DB::table('idiomas')->truncate();
+    	DB::table('idiomas')->delete();
  		DB::table('idiomas')->insert(['nombre' => 'Inglés']);        
  		DB::table('idiomas')->insert(['nombre' => 'Castellano']);        
     }

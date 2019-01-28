@@ -11,7 +11,7 @@ class ValoracionesTableSeeder extends Seeder
      */
     public function run()
     {
-    	DB::table('valoraciones')->truncate();
+    	DB::table('valoraciones')->delete();
  		DB::table('valoraciones')->insert(['nombre' => 'Excelente']);        
  		DB::table('valoraciones')->insert(['nombre' => 'Bueno']);        
  		DB::table('valoraciones')->insert(['nombre' => 'Regular']);        

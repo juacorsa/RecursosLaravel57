@@ -11,7 +11,7 @@ class EditorialesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('editoriales')->truncate();
+        DB::table('editoriales')->delete();
 		DB::table('editoriales')->insert(['nombre' => 'Apress']);                
 		DB::table('editoriales')->insert(['nombre' => 'Wrox']);                
 		DB::table('editoriales')->insert(['nombre' => 'Oreilly']);                

@@ -11,7 +11,7 @@ class TemasTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('temas')->truncate();
+        DB::table('temas')->delete();
         DB::table('temas')->insert(['nombre' => 'Angular']);
 		DB::table('temas')->insert(['nombre' => 'MongoDB']);
 		DB::table('temas')->insert(['nombre' => 'Node']);

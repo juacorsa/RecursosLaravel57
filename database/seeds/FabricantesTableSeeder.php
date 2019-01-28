@@ -11,7 +11,7 @@ class FabricantesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('fabricantes')->truncate();
+        DB::table('fabricantes')->delete();
     	DB::table('fabricantes')->insert(['nombre' => 'Pluralsight']);
 		DB::table('fabricantes')->insert(['nombre' => 'Udemy']);
 		DB::table('fabricantes')->insert(['nombre' => 'Mosh Hamedani']);

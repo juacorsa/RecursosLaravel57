@@ -1,18 +1,16 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('contenido')
-    <div class="wrapper wrapper-content animated fadeInRight">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="text-center m-t-lg">
-                    <h1>
-                        Bienvenido a la aplicación de Gestión de Recursos
-                    </h1>
-                    <small>
-                        Desde esta aplicación podrás gestionar tus tutoriales, libros y enlaces.!!
-                    </small>
-                </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center mt-5">
+                <h2>
+                    Bienvenido a la aplicación de Gestión de Recursos
+                </h2>
+                <h6>
+                    Desde esta aplicación podrás gestionar tus tutoriales, libros y enlaces.!!
+                </h6>
             </div>
         </div>
-    </div>
+    </div>    
 @endsection

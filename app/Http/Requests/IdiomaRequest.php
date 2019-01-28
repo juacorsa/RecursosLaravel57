@@ -13,7 +13,7 @@ class IdiomaRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -21,10 +21,20 @@ class IdiomaRequest extends FormRequest
      *
      * @return array
      */
+
     public function rules()
     {
         return [
-            //
+            'nombre' => 'required|max:40|unique:idiomas'
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'nombre.required' => 'El nombre del idioma es un dato obligatorio.',
+            'nombre.max'      => 'El nombre del idioma debe tener como máximo :max caracteres.',
+            'nombre.unique'   => 'El idioma indicado ya existe en la base de datos'
         ];
     }
 }

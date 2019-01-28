@@ -1,50 +1,29 @@
-<nav class="navbar-default navbar-static-side" role="navigation">
-    <div class="sidebar-collapse">
-        <ul class="nav metismenu" id="side-menu">   
-            <li class="nav-header">              
-                <h2 class="font-bold font-white">Gestión de Recursos</h2>                
-            </li>
-            <li>
-                <a href=""><i class="fas fa-video"></i> <span class="nav-label">Tutoriales</span></a>
-            </li>
-            <li>
-                <a href=""><i class="fas fa-book"></i> <span class="nav-label">Libros</span></a>
-            </li>
-            <li>
-                <a href=""><i class="fas fa-external-link-alt"></i> <span class="nav-label">Enlaces</span></a>
-            </li>
-            <li>
-                <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Mantenimientos</span> <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="index.html">
-                            <i class="fas fa-book"></i>Editoriales
-                        </a>
-                    </li>
-                    <li>
-                        <a href="dashboard_2.html">
-                            <i class="fas fa-archive"></i>Temas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="dashboard_2.html">
-                            <i class="fas fa-globe"></i>Idiomas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="dashboard_2.html">
-                            <i class="fas fa-graduation-cap"></i>Fabricantes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="dashboard_5.html">
-                            <i class="fas fa-user-check"></i>Valoraciones
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-        </ul>
-
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #8258FA;">
+  <a class="navbar-brand" href="#">Recursos</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tutoriales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Libros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Enlaces</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mantenimientos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{{ route('idiomas.index') }}">Idiomas</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
 </nav>
