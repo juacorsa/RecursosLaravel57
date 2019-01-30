@@ -3,15 +3,13 @@
 namespace App\Repositories;
 
 use Illuminate\Http\Request;
+use App\Tema;
 
-use App\Repositories\Interfaces\ProductoRepositoryInterface;
-use App\Model\Producto;
-
-class ProductoRepository implements ProductoRepositoryInterface
+class TemaRepository 
 {
 	private $modelo;
 
-	public function __construct(Producto $modelo)
+	public function __construct(Tema $modelo)
 	{
 		$this->modelo = $modelo;
 	}
@@ -34,6 +32,5 @@ class ProductoRepository implements ProductoRepositoryInterface
 	public function obtener($id)
 	{
 		return $this->modelo->find($id);
-	}
-	
+	}	
 }

@@ -15,8 +15,7 @@ class CreateTemasTable extends Migration
     {
         Schema::create('temas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre', 40);
-            $table->unique('nombre');
+            $table->string('nombre', 40)->unique();            
         });
     }
 

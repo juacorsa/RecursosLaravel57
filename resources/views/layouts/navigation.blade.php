@@ -20,8 +20,9 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="{{ route('idiomas.index') }}">Idiomas</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="{{ route('temas.index') }}">Temas</a>
+          <a class="dropdown-item" href="{{ route('idiomas.index') }}">Editoriales</a>
+          <a class="dropdown-item" href="{{ route('idiomas.index') }}">Fabricantes</a>          
         </div>
       </li>
     </ul>
